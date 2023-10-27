@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="booking.css" />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <header>
+      <div class="upTotal-header">
+        <div class="logo-header">
+          <a href="https://www.twayair.com/app/main"></a>
+          <img
+            src="https://contents-image.twayair.com/homepage/images/common/top_logo_booking.png"
+            alt="logo"
+          />
+        </div>
+        <!-- <div class="kr-name-header">온라인면세점</div> -->
+        <div class="upMenu-header">
+          <div class="lang-header">
+            <ul>
+              <li>
+                한국
+                <img
+                  src="https://contents-image.twayair.com/homepage/images/common/arr_txt_sel.png"
+                  alt=""
+                />
+              </li>
+              <span class="menu-header-span"> | </span>
+              <li>
+                한국어
+                <img
+                  src="https://contents-image.twayair.com/homepage/images/common/arr_txt_sel.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="upMenu-icon-header">
+            <img
+              src="https://contents-image.twayair.com/homepage/images/ico/ico_top_login.png"
+              alt="로그인"
+            />
+            <img
+              src="https://contents-image.twayair.com/homepage/images/ico/ico_top_search.png"
+              alt="메뉴"
+            />
+            <img
+              src="https://contents-image.twayair.com/homepage/images/ico/ico_top_allmenu.png"
+              alt="전체메뉴"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 컨테이너 본문 -->
+    <div class="container">
+      <div class="content">
+        <!-- 타이틀 -->
+        <div class="wrap-title">
+          <div class="content-title">
+            <span>항공권예매</span>
+          </div>
+          <div class="booking-step">
+            <ul>
+              <li class="step01"></li>
+              <li class="step02"></li>
+              <li class="step03"></li>
+              <li class="step04"></li>
+              <li class="step05"></li>
+              <li class="step06"></li>
+            </ul>
+            <div class="booking-txt">
+              <span class="txt01">01 여정 검색</span>
+              <span class="txt02">02</span>
+              <span class="txt03">03</span>
+              <span class="txt04">04</span>
+              <span class="txt05">05</span>
+              <span class="txt06">06</span>
+            </div>
+          </div>
+        </div>
+        <!-- 타이틀 끝 -->
+        <!-- 인풋 시작 -->
+        <div class="wrap-input">
+          <div class="booking-option">
+            <div class="option-select">
+              <ul>
+                <li class="select01"><span>왕복</span></li>
+                <li class="select02"><span>편도</span></li>
+                <li class="select03"><span>다구간</span></li>
+              </ul>
+            </div>
+            <div class="option-group">
+              <img
+                src="https://contents-image.twayair.com/homepage/images/ico/ico_group_gray.png"
+                alt=""
+              />
+              <span>단체(10명 이상)</span>
+            </div>
+            <div class="youtube">
+              <img
+                src="https://contents-image.twayair.com/homepage/images/common/logo_twayplus_red.svg"
+                alt=""
+              />
+              <span>구독하기</span>
+              <img
+                class="ytb-img2"
+                src="https://contents-image.twayair.com/homepage/images/ico/ico_arrow_black_small.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="up-input">
+            <!-- <ul>
+              <li></li>
+              <li></li>
+            </ul> -->
+            <div class="input-route">
+              <div class="start-wrap">
+                <div class="input-start">
+                  <span class="start-txt">출발지</span>
+                  <input
+                    class="input-box"
+                    type="text"
+                    placeholder="도시/공항"
+                  />
+                </div>
+                <div class="input-logo">
+                  <img
+                    src="https://contents-image.twayair.com/homepage/images/ico/ico_start_wh.png"
+                    alt="로고"
+                  />
+                </div>
+              </div>
+              <div class="end-wrap">
+                <div class="input-end">
+                  <span class="start-txt">도착지</span>
+                  <input
+                    class="input-box"
+                    type="text"
+                    placeholder="도시/공항"
+                  />
+                </div>
+                <div class="input-logo2">
+                  <img
+                    src="https://contents-image.twayair.com/homepage/images/ico/ico_end_wh.png"
+                    alt="로고"
+                  />
+                </div>
+              </div>
+              <div class="day-wrap">
+                <div class="input-day">
+                  <span class="day-txt">탑승일</span>
+                  <div class="day-box-all">
+                    <input class="day-box" type="date" />
+                    <input class="day-box2 daybox2" type="date" />
+                  </div>
+                </div>
+                <div class="input-endlog3">
+                  <img
+                    src="https://contents-image.twayair.com/homepage/images/ico/ico_btn_date.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="logo3-all">
+                <div class="input-daylogo3">
+                  <img
+                    src="https://contents-image.twayair.com/homepage/images/ico/ico_calendar_wh.png"
+                    alt="로고"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="down-input">
+          <div class="dc-wrap">
+            <div class="input-dc">
+              <span class="dc-txt">할인코드</span>
+              <div class="dc-box-all">
+                <input class="dc-box" type="text" placeholder="할인코드 입력" />
+                <!-- <input class="day-box2 daybox2" type="date"/> -->
+              </div>
+            </div>
+            <!-- <div class="input-dclog4">
+              <img
+                src="https://contents-image.twayair.com/homepage/images/ico/ico_btn_date.png"
+                alt=""
+              />
+            </div> -->
+          </div>
+          <div class="logo4-all">
+            <div class="input-dclogo3">
+              <img
+                src="https://contents-image.twayair.com/homepage/images/ico/ico_sale_code_wh.png"
+                alt="로고"
+              />
+            </div>
+          </div>
+          <!-- 성인 선택 -->
+          <div class="choice-wrap">
+            <div class="choice">
+                <div class="age">
+                    <input class="age-input" placeholder="1">
+                </div>
+                <div class="mf">
+                    <input class="mf-input" placeholder="0">
+                </div>
+                <div class="baby">
+                    <input class="baby-input" placeholder="0">
+                </div>
+            </div>
+          </div>
+
+          <div class="choice-txt">
+            <span class="age1">성인</span>
+            <span class="age2">소아</span>
+            <span class="age3">유아</span>
+          </div>
+
+          <div class="ageClac">
+            <span class="ageClac-1">나이 계산기</span>
+          </div>
+
+          <div class="disButton">
+            <span class="disButton1">할인코드 규정</span>
+          </div>
+
+
+
+
+        </div>
+        <!-- 예매하기 -->
+        <div class="booking-wrap">
+          <div class="txt-finsh">
+            <span>예매하기</span>
+          </div>
+        </div>
+
+        <!-- 인풋 끝 -->
+        <!-- 자잘한 이미지들 -->
+        <div class="button1">
+            <img src="https://contents-image.twayair.com/homepage/images/ico/ico_minus02.png" alt="">
+        </div>
+        <div class="button2">
+            <img src="https://contents-image.twayair.com/homepage/images/ico/ico_plus02.png" alt="">
+        </div>
+        <div class="button3">
+            <img src="https://contents-image.twayair.com/homepage/images/ico/ico_minus02.png" alt="">
+        </div>
+        <div class="button4">
+            <img src="https://contents-image.twayair.com/homepage/images/ico/ico_plus02.png" alt="">
+        </div>
+        <div class="button5">
+            <img src="https://contents-image.twayair.com/homepage/images/ico/ico_minus02.png" alt="">
+        </div>
+        <div class="button6">
+            <img src="https://contents-image.twayair.com/homepage/images/ico/ico_plus02.png" alt="">
+        </div>
+
+
+
+        <div class="input-logo-human">
+            <img
+              src="https://contents-image.twayair.com/homepage/images/ico/ico_passenger_wh.png"
+              alt="로고"
+            />
+          </div>
+        <div class="logo-start-logo">
+            <div class="input-stlogo1"> 
+              <img
+                src="https://contents-image.twayair.com/homepage/images/ico/ico_btn_pin.png"
+                alt="로고"
+              />
+            </div>
+            <div class="logo-start-logo2">
+                <div class="input-stlogo2"> 
+                  <img
+                    src="https://contents-image.twayair.com/homepage/images/ico/ico_btn_pin.png"
+                    alt="로고"
+                  />
+                </div>
+                <div class="logo-start-logo3">
+                    <div class="input-stlogo3"> 
+                      <img
+                        src="https://contents-image.twayair.com/homepage/images/ico/ico_change.png"
+                        alt="로고"
+                      />
+                    </div>
+                    </div>
+</div>
+      </div>
+    </div>
+    <!-- 푸터 -->
+</body>
+    <footer>
+      <div class="footer-info-wrap">
+        <div class="footer-info">
+          <div class="info-txt">
+            <span class="revCenter">티웨이 항공예약센터</span>
+            <span class="telNum">1688 - 8686</span>
+            <span class="infoTime"> 07:00 ~ 19:00</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+</html>

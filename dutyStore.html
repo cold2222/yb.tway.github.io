@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dutyStore.css" />
+
+    <!-- 슬라이더 css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- 헤더 전체 -->
+    <header>
+      <div class="upTotal-header">
+        <div class="logo-header">
+          <a href="https://www.twayair.com/app/main"></a>
+          <img
+            src="https://contents-image.twayair.com/homepage/images/common/top_logo_booking.png"
+            alt="logo"
+          />
+        </div>
+        <div class="kr-name-header">온라인면세점</div>
+        <div class="upMenu-header">
+          <div class="lang-header">
+            <ul>
+              <li>
+                한국
+                <img
+                  src="https://contents-image.twayair.com/homepage/images/common/arr_txt_sel.png"
+                  alt=""
+                />
+              </li>
+              <span class="menu-header-span"> | </span>
+              <li>
+                한국어
+                <img
+                  src="https://contents-image.twayair.com/homepage/images/common/arr_txt_sel.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="upMenu-icon-header">
+            <img
+              src="https://contents-image.twayair.com/homepage/images/ico/ico_top_login.png"
+              alt="로그인"
+            />
+            <img
+              src="https://contents-image.twayair.com/homepage/images/ico/ico_top_search.png"
+              alt="메뉴"
+            />
+            <img
+              src="https://contents-image.twayair.com/homepage/images/ico/ico_top_allmenu.png"
+              alt="전체메뉴"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="downTotal-header">
+        <div class="downMenu-icon">
+          <div class="icon">
+            <a
+              class="btn_cate_menu"
+              href="#none"
+              onclick="f('click_dutyfree_main', '카테고리', '메뉴');"
+            >
+              <!-- <span>기내면세품 메뉴</span> -->
+            </a>
+          </div>
+        </div>
+        <div class="menu-list-header">
+          <ul>
+            <li><a href="">주류</a></li>
+            <li><a href="">화장품 & 향수</a></li>
+            <li><a href="">건강제품</a></li>
+            <li><a href="">쥬얼리 & 선물용품</a></li>
+            <li><a href="">초콜릿 & 식품</a></li>
+          </ul>
+        </div>
+
+        <div class="downMenu-header">
+          <ul>
+            <li>나의주문</li>
+            <span> | </span>
+            <li>장바구니</li>
+            <span> | </span>
+            <li>이벤트</li>
+            <span> | </span>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="path-header">
+        <ul>
+          <li>HOME</li>
+          <span> > </span>
+          <li>온라인면세점</li>
+        </ul>
+        <img
+          src="https://contents-image.twayair.com/homepage/images/ico/ico_path_home.png"
+          alt="house"
+        />
+      </div>
+    </header>
+    <!-- 헤더 끝 -->
+    <!-- 광고판 슬라이드 -->
+    <div class="swiper duty-ad">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://contents-image.twayair.com/contents/2023/1006/6af820d6-ef17-4b45-9091-bd10aeda5261.png"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://contents-image.twayair.com/contents/2023/1006/d980e3c0-4c8f-4cd1-9878-3d952941da2b.png
+            "
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://contents-image.twayair.com/contents/2023/1006/5385bc29-3e49-4f73-a4c8-8d850d1ac255.png
+            "
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://contents-image.twayair.com/contents/2023/1006/95721787-f1e6-4fdc-b272-acc91cfed271.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <div class="main">
+      <!-- 컨텐트, 본문 -->
+      <div class="container">
+        <div class="duty-content">
+          <!-- best 상품 -->
+          <div class="best-item">
+            <div class="best-title">
+              <span>BEST 상품 </span>
+            </div>
+            <div class="best-nav">
+              <div class="best-nav-square">
+                <div class="best-nav-names">
+                  <div class="best-achol">주류</div>
+                  <div class="best-cosmetic">화장품 & 향수</div>
+                  <div class="best-healty">건강제품</div>
+                  <div class="best-jewelly">쥬얼리 & 선물용품</div>
+                  <div class="bset-choco">초콜릿 & 식품</div>
+                </div>
+              </div>
+            </div>
+            <!-- best muenu titlle format 끝 여기까지 -->
+            <div class="best-product-total">
+              <div class="best-product">
+                <div class="best-product-one">
+                  <span class="best-pd-num-one">01</span>
+                  <img
+                    class="best-pd-img imgone"
+                    src="https://contents-image.twayair.com/contents/2020/0106/a5b18ecc-35b4-4359-a43e-458aeb9b0c94.jpg"
+                    alt=""
+                  />
+                  <div class="best-pd-name">
+                    <span class="bp-maker-one">발렌타인</span>
+                    <strong class="bp-name-one">발렌타인 21년</strong>
+                    <div class="best-pd-price">
+                      <strike>$166.00</strike>
+                      <strong>$149.00</strong>
+                      <span>(￦197,000)</span>
+                    </div>
+                  </div>
+                  <div class="bp-label">
+                    <span class="label-event">BEST</span>
+                  </div>
+                </div>
+                <div class="best-product-two">
+                  <span class="best-pd-num-two">02</span>
+                  <img
+                    class="best-pd-img imgtwo"
+                    src="https://contents-image.twayair.com/contents/2023/0119/ee81295c-490b-4a2d-a883-e9ae2afab193.jpg"
+                    alt=""
+                  />
+                  <div class="best-pd-name">
+                    <span class="bp-maker-two">KAVAKAN</span>
+                    <strong class="bp-name-two"
+                      >[2병째30%할인]카발란 비노바리끄 솔리스트</strong
+                    >
+                    <div class="best-pd-price">
+                      <strike class>$176.00</strike>
+                      <strong class>$158.00</strong>
+                      <span class>(￦209,000)</span>
+                    </div>
+                  </div>
+                  <div class="bp-label">
+                    <span class="label-event">EVENT</span>
+                  </div>
+                </div>
+                <div class="best-product-three">
+                  <div class="best-product-three">
+                    <span class="best-pd-num-three">03</span>
+                    <img
+                      class="best-pd-img imgthree"
+                      src="https://contents-image.twayair.com/contents/2020/0109/86f77242-9057-4573-af12-51b88a7ad1e7.jpg"
+                      alt=""
+                    />
+                    <div class="best-pd-name">
+                      <span class="bp-maker-three">로얄살루트</span>
+                      <strong class="bp-name-three"
+                        >[2병째30%할인]로얄살루트 21년 시그니처 블랜드</strong
+                      >
+                      <div class="best-pd-price-three">
+                        <strike>$201.00</strike>
+                        <strong>$181.00</strong>
+                        <span>(￦239,000)</span>
+                      </div>
+                    </div>
+                    <div class="bp-label">
+                      <span class="label-event">EVENT</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="best-product-four">
+                  <div class="best-product-four">
+                    <span class="best-pd-num-four">04</span>
+                    <img
+                      class="best-pd-img imgfour"
+                      src="https://contents-image.twayair.com/contents/2020/0109/cbc2e2c9-5c10-49cb-b5e5-ec8e52f47d9e.jpg"
+                      alt=""
+                    />
+                    <div class="best-pd-name">
+                      <span class="bp-maker-four">조니워커</span>
+                      <strong class="bp-name-four"
+                        >[2병째30%할인]조니워커 블루 라벨</strong
+                      >
+                      <div class="best-pd-price">
+                        <strike>$226.00</strike>
+                        <strong>$203.00</strong>
+                        <span>(￦268,000)</span>
+                      </div>
+                    </div>
+                    <div class="bp-label">
+                      <span class="label-event">EVENT</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 베스트 아이템 끝 -->
+        <!-- 베스트 아이템 옆 픽스드 메뉴 -->
+        <div class="fixed-total"></div>
+        <div class="fixed-menu">
+          <div class="exrate">
+            <img
+              src="https://contents-image.twayair.com/homepage/images/dutyfree/ico_exrate.png"
+              alt=""
+            />
+            <span>환율(1$)</span>
+            <strong>￦1,320</strong>
+          </div>
+          <div class="time">
+            <img
+              src="https://contents-image.twayair.com/homepage/images/dutyfree/ico_time.png"
+              alt=""
+            />
+            <span class="time-tx">주문가능<br />시간</span>
+          </div>
+          <div class="info">
+            <img
+              src="https://contents-image.twayair.com/homepage/images/dutyfree/ico_info.png"
+              alt=""
+            />
+            <span>이용안내</span>
+          </div>
+          <div class="fixed-menu-top">
+            <span class="fmt">^</span>
+            <span class="fmt2">TOP</span>
+          </div>
+        </div>
+      </div>
+      <!-- 스페셜 아이템 시작 -->
+      <div class="special-item">
+        <div class="special-title">
+          <span class="online">온라인 특가 (최대 70% 할인)</span>
+        </div>
+        <div class="special-total">
+          <a href="A"></a>
+          <div #swiperRef="" class="swiper duty-special">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide special-slide">
+                <img
+                  src="https://contents-image.twayair.com/contents/2020/0109/e6521739-4797-4a6f-88eb-6dfd7ea138ba.jpg"
+                  alt=""
+                />
+                <!-- <span class="special_discount">40%</span> -->
+
+                <div class="special-pd-name">
+                  <span class="special-maker-one">프랭클린 코비</span>
+                  <strong class="special-name-one"
+                    >[인천,김포노선/온라인특가]볼펜 세트(8종)</strong
+                  >
+                </div>
+                <div class="best-pd-price special-p1">
+                  <strike>$75.00</strike>
+                  <strong>$45.00</strong>
+                  <span>(￦59,500)</span>
+                </div>
+                <div class="special-p2">&nbsp;</div>
+              </div>
+              <div class="swiper-slide special-slide">
+                <img
+                  src="https://contents-image.twayair.com/contents/2020/0109/e6521739-4797-4a6f-88eb-6dfd7ea138ba.jpg"
+                  alt=""
+                />
+                <!-- <span class="special_discount">40%</span> -->
+
+                <div class="special-pd-name">
+                  <span class="special-maker-one">프랭클린 코비</span>
+                  <strong class="special-name-one"
+                    >[인천,김포노선/온라인특가]볼펜 세트(8종)</strong
+                  >
+                </div>
+                <div class="best-pd-price special-p1">
+                  <strike>$75.00</strike>
+                  <strong>$45.00</strong>
+                  <span>(￦59,500)</span>
+                </div>
+                <div class="special-p2">&nbsp;</div>
+              </div>
+              <div class="swiper-slide special-slide">
+                <img
+                  src="https://contents-image.twayair.com/contents/2020/0109/e6521739-4797-4a6f-88eb-6dfd7ea138ba.jpg"
+                  alt=""
+                />
+                <!-- <span class="special_discount">40%</span> -->
+
+                <div class="special-pd-name">
+                  <span class="special-maker-one">프랭클린 코비</span>
+                  <strong class="special-name-one"
+                    >[인천,김포노선/온라인특가]볼펜 세트(8종)</strong
+                  >
+                </div>
+                <div class="best-pd-price special-p1">
+                  <strike>$75.00</strike>
+                  <strong>$45.00</strong>
+                  <span>(￦59,500)</span>
+                </div>
+                <div class="special-p2">&nbsp;</div>
+              </div>
+              <div class="swiper-slide special-slide">
+                <img
+                  src="https://contents-image.twayair.com/contents/2020/0109/e6521739-4797-4a6f-88eb-6dfd7ea138ba.jpg"
+                  alt=""
+                />
+                <!-- <span class="special_discount">40%</span> -->
+
+                <div class="special-pd-name">
+                  <span class="special-maker-one">프랭클린 코비</span>
+                  <strong class="special-name-one"
+                    >[인천,김포노선/온라인특가]볼펜 세트(8종)</strong
+                  >
+                </div>
+                <div class="best-pd-price special-p1">
+                  <strike>$75.00</strike>
+                  <strong>$45.00</strong>
+                  <span>(￦59,500)</span>
+                </div>
+                <div class="special-p2">&nbsp;</div>
+              </div>
+              <div class="swiper-slide special-slide">
+                <img
+                  src="https://contents-image.twayair.com/contents/2020/0109/e6521739-4797-4a6f-88eb-6dfd7ea138ba.jpg"
+                  alt=""
+                />
+                <!-- <span class="special_discount">40%</span> -->
+
+                <div class="special-pd-name">
+                  <span class="special-maker-one">프랭클린 코비</span>
+                  <strong class="special-name-one"
+                    >[인천,김포노선/온라인특가]볼펜 세트(8종)</strong
+                  >
+                </div>
+                <div class="best-pd-price special-p1">
+                  <strike>$75.00</strike>
+                  <strong>$45.00</strong>
+                  <span>(￦59,500)</span>
+                </div>
+                <div class="special-p2">&nbsp;</div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <!-- 스페셜 슬라이드 끝 -->
+        <div class="btn">
+          <img
+            class="btn-one"
+            src="https://contents-image.twayair.com/homepage/images/main/btn_goods_prev.png"
+            alt=""
+          />
+          <img
+            class="btn-two"
+            src="https://contents-image.twayair.com/homepage/images/main/btn_goods_next.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- 10월 신상품 시작 -->
+      <div class="new-item">
+        <div class="new-title">
+          <span>10월 신상품</span>
+        </div>
+        <div class="new-total">
+          <!-- 신상품 슬라이드 -->
+          <div #swiperRef="" class="swiper duty-new">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide new-slide ns">
+                <img
+                  src="https://contents-image.twayair.com/contents/2023/0927/8a80b0c2-851c-4f60-9803-df254d7916ca.jpg"
+                  alt=""
+                />
+                <div class="new-pd-name">
+                  <span class="new-maker-one">네이처스패밀리</span>
+                  <strong class="new-name-one">네이처스패밀리 PC400000</strong>
+                </div>
+                <div class="best-pd-price new-p1">
+                  <strike>$166.00</strike>
+                  <strong>$149.00</strong>
+                  <span>(￦197,000)</span>
+                </div>
+                <div class="new-label">
+                  <span class="new-new">NEW</span>
+                </div>
+              </div>
+              <div class="swiper-slide new-slide ns1">
+                <img
+                  src="https://contents-image.twayair.com/contents/2023/0927/8a80b0c2-851c-4f60-9803-df254d7916ca.jpg"
+                  alt=""
+                />
+                <div class="new-pd-name">
+                  <span class="new-maker-one">네이처스패밀리</span>
+                  <strong class="new-name-one">네이처스패밀리 PC400000</strong>
+                </div>
+                <div class="best-pd-price new-p1">
+                  <strike>$166.00</strike>
+                  <strong>$149.00</strong>
+                  <span>(￦197,000)</span>
+                </div>
+                <div class="new-label">
+                  <span class="new-new">NEW</span>
+                </div>
+              </div>
+              <div class="swiper-slide new-slide ns2">
+                <img
+                  src="https://contents-image.twayair.com/contents/2023/0927/8a80b0c2-851c-4f60-9803-df254d7916ca.jpg"
+                  alt=""
+                />
+                <div class="new-pd-name">
+                  <span class="new-maker-one">네이처스패밀리</span>
+                  <strong class="new-name-one">네이처스패밀리 PC400000</strong>
+                </div>
+                <div class="best-pd-price new-p1">
+                  <strike>$166.00</strike>
+                  <strong>$149.00</strong>
+                  <span>(￦197,000)</span>
+                </div>
+                <div class="new-label">
+                  <span class="new-new">NEW</span>
+                </div>
+              </div>
+              <div class="swiper-slide new-slide ns3">
+                <img
+                  src="https://contents-image.twayair.com/contents/2023/0927/8a80b0c2-851c-4f60-9803-df254d7916ca.jpg"
+                  alt=""
+                />
+                <div class="new-pd-name">
+                  <span class="new-maker-one">네이처스패밀리</span>
+                  <strong class="new-name-one">네이처스패밀리 PC400000</strong>
+                </div>
+                <div class="best-pd-price new-p1">
+                  <strike>$166.00</strike>
+                  <strong>$149.00</strong>
+                  <span>(￦197,000)</span>
+                </div>
+                <div class="new-label">
+                  <span class="new-new">NEW</span>
+                </div>
+              </div>
+              <div class="swiper-slide new-slide ns4">
+                <img
+                  src="https://contents-image.twayair.com/contents/2023/0927/8a80b0c2-851c-4f60-9803-df254d7916ca.jpg"
+                  alt=""
+                />
+                <div class="new-pd-name">
+                  <span class="new-maker-one">네이처스패밀리</span>
+                  <strong class="new-name-one">네이처스패밀리 PC400000</strong>
+                </div>
+                <div class="best-pd-price new-p1">
+                  <strike>$166.00</strike>
+                  <strong>$149.00</strong>
+                  <span>(￦197,000)</span>
+                </div>
+                <div class="new-label">
+                  <span class="new-new">NEW</span>
+                </div>
+              </div>
+              <div class="swiper-slide new-slide ns5">
+                <img
+                  src="https://contents-image.twayair.com/contents/2023/0927/8a80b0c2-851c-4f60-9803-df254d7916ca.jpg"
+                  alt=""
+                />
+                <div class="new-pd-name">
+                  <span class="new-maker-one">네이처스패밀리</span>
+                  <strong class="new-name-one">네이처스패밀리 PC400000</strong>
+                </div>
+                <div class="best-pd-price new-p1">
+                  <strike>$166.00</strike>
+                  <strong>$149.00</strong>
+                  <span>(￦197,000)</span>
+                </div>
+                <div class="new-label">
+                  <span class="new-new">NEW</span>
+                </div>
+              </div>
+              <div class="swiper-slide new-slide ns5">
+                <img
+                  src="https://contents-image.twayair.com/contents/2023/0927/8a80b0c2-851c-4f60-9803-df254d7916ca.jpg"
+                  alt=""
+                />
+                <div class="new-pd-name">
+                  <span class="new-maker-one">네이처스패밀리</span>
+                  <strong class="new-name-one">네이처스패밀리 PC400000</strong>
+                </div>
+                <div class="best-pd-price new-p1">
+                  <strike>$166.00</strike>
+                  <strong>$149.00</strong>
+                  <span>(￦197,000)</span>
+                </div>
+                <div class="new-label">
+                  <span class="new-new">NEW</span>
+                </div>
+              </div>
+              <div class="swiper-slide new-slide ns5">
+                <img
+                  src="https://contents-image.twayair.com/contents/2023/0927/8a80b0c2-851c-4f60-9803-df254d7916ca.jpg"
+                  alt=""
+                />
+                <div class="new-pd-name">
+                  <span class="new-maker-one">네이처스패밀리</span>
+                  <strong class="new-name-one">네이처스패밀리 PC400000</strong>
+                </div>
+                <div class="best-pd-price new-p1">
+                  <strike>$166.00</strike>
+                  <strong>$149.00</strong>
+                  <span>(￦197,000)</span>
+                </div>
+                <div class="new-label">
+                  <span class="new-new">NEW</span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+          </div>
+          <!-- 신상품 슬라이드 끝 -->
+          <div class="new-btn">
+            <img
+              class="new-btn-one"
+              src="https://contents-image.twayair.com/homepage/images/main/btn_goods_prev.png"
+              alt=""
+            />
+            <img
+              class="new-btn-two"
+              src="https://contents-image.twayair.com/homepage/images/main/btn_goods_next.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- 이벤트 칸 -->
+      <div class="event">
+        <div class="event-title">
+          <span>이벤트</span>
+        </div>
+      </div>
+      <!-- 푸터 전 맨 아래 공지사항 -->
+      <div class="down-side">
+        <div class="down-side-total">
+          <div class="notice">
+            <div class="notice-text-all">
+              <div class="notice-text">
+                <span>공지사항</span>
+              </div>
+              <div class="notice-content">
+                <ul>
+                  <li>
+                    <a href="" style="color: #777"
+                      >여행자 휴대품 면세범위 한도 상향 안내 (22년 9월 6일 부
+                      적용)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" style="color: #777"
+                      >담배류 사전주문에 대한 안내</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" style="color: #777"
+                      >예약물품 세관 신고를 위한 단체주문 불가 안내</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="notice-add">
+                <span>더보기</span>
+                <img
+                  src="https://contents-image.twayair.com/homepage/images/ico/ico_btn_txt.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="number">
+            <div class="number-text-all">
+              <sapn class="nta-one">온라인면세점 관련 문의</sapn>
+              <span class="nta-two">02-6250-4030</span>
+            </div>
+            <div class="number-content">
+              <ul>
+                <li>상담가능시간 09:00~17:00</li>
+                <li>(주말/공휴일 제외)</li>
+              </ul>
+            </div>
+            <img
+              src="https://contents-image.twayair.com/homepage/images/dutyfree/ico_phone.png"
+              alt=""
+            />
+          </div>
+          <div class="cs">
+            <div class="faq">
+              <div class="faq-img">
+                <img
+                  src="https://contents-image.twayair.com/homepage/images/dutyfree/ico_cs1.png"
+                  alt=""
+                />
+              </div>
+              <span class="faq-tx">FAQ</span>
+            </div>
+            <div class="faq2">
+              <div class="faq2-img">
+                <img
+                  src="https://contents-image.twayair.com/homepage/images/dutyfree/ico_cs2.png"
+                  alt=""
+                />
+              </div>
+              <span class="faq2-tx">고객의 말씀</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 본문 끝 -->
+    <!-- 푸터 -->
+    <footer>
+      <div class="reservation-center">
+        <div style="display: flex">
+          <div class="reservation-center-inner">티웨이항공 예약센터</div>
+          <div
+            style="
+              margin: 10px 20px;
+              font-size: 18pt;
+              color: #d22c26;
+              font-weight: bold;
+            "
+          >
+            1688 - 8686
+          </div>
+          <div style="font-size: 10pt; margin: 20px 0px">07:00 ~ 19:00</div>
+        </div>
+
+        <div style="justify-content: space-between; display: flex">
+          <div>
+            <a href="http://www.instagram.com/twayair"
+              ><img class="links" src="https://ifh.cc/g/thrb0H.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="http://www.youtube.com/channel/UCEOdVOvRh7iT-ngjX5TVIIg"
+              ><img img class="links" src="https://ifh.cc/g/yPzBc8.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="http://www.facebook.com/twayair"
+              ><img class="links" src="https://ifh.cc/g/KhMKkw.png" alt=""
+            /></a>
+          </div>
+          <div style="height: 40px; border-bottom: black 2px solid">
+            <select name="likeLanguage" id="" class="pl">
+              <option value="">항공훈련센터</option>
+              <option value="">예림당</option>
+              <option value="">예림교육</option>
+              <option value="">스마트베어</option>
+              <option value="">와이슈타인</option>
+              <option value="">예림디지털</option>
+              <option value="">티웨이홀딩스</option>
+              <option value="">해여림빌리지</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info-t">
+        <div class="footer-info">
+          <div class="footer-info-box">
+            <div class="footer-info-bold">
+              <a href="">회사소개</a>
+            </div>
+            <div style="display: flex; height: 100%">
+              <div class="footer-info-bold-inner">
+                티웨이항공 소개 <br />
+                투자정보<br />
+                채용안내<br />
+                지속가능경영<br />
+                항공훈련센터<br />
+              </div>
+              <div class="footer-info-bold-inner">
+                광고 홍보 영상 <br />
+                사회 공헌<br />
+                보도자료<br />
+                기업지배구조<br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-info">
+          <div class="footer-info-box">
+            <div class="footer-info-bold">
+              <a href="">고객센터</a>
+            </div>
+            <div style="display: flex; height: 100%">
+              <div class="footer-info-bold-inner">
+                공지사항 <br />
+                유실물센터<br />
+                고객의 말씀<br />
+              </div>
+              <div class="footer-info-bold-inner">
+                제휴문의<br />
+                FAQ<br />
+                서식자료실<br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-info">
+          <div class="footer-info-box">
+            <div class="footer-info-bold">
+              <a href="">규정 및 약관</a>
+            </div>
+            <div style="display: flex; height: 100%">
+              <div class="footer-info-bold-inner">
+                여객운송약관 <br />
+                운임 및 수수료<br />
+                기타 고지사항<br />
+              </div>
+              <div class="footer-info-bold-inner">
+                홈페이지 이용약관<br />
+                개인정보 처리방침<br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-info">
+          <div class="footer-info-box">
+            <div class="footer-info-bold">
+              <a href="">기타</a>
+            </div>
+            <div style="display: flex; height: 100%">
+              <div class="footer-info-bold-inner" style="width: 100%">
+                기타 항공교통 이용자서비스 계획<br />
+                피해구제계획<br />
+                t'agency<br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-top: 20px">
+        <div>
+          <img
+            src="https://contents-image.twayair.com/homepage/images/common/f_logo.png"
+            alt=""
+          />
+        </div>
+        <div class="footer-last-info">
+          <p>
+            대표이사. 정홍근 | 사업자등록번호. 101-81-94800 | 주소. 대구광역시
+            중구 동덕로 167, 10층(동인동2가, KT 대구타워 신관) <br />
+          </p>
+          <p>
+            통신판매업신고번호. 2017-서울강서-1292 개인정보 관리책임자.
+            경영본부장 김형이 <br />
+          </p>
+          Copyright ⓒ 2019 t'way Air. All Rights Reserved. <br />
+          ©Pokémon. ©Nintendo/Creatures Inc./GAME FREAK inc.포켓몬스터, 포켓몬,
+          Pokémon은 Nintendo의 상표입니다.
+        </div>
+
+        <div style="margin: 40px; display: flex; align-items: center">
+          <img
+            style="height: 69px"
+            src="https://contents-image.twayair.com/homepage/images/common/WA.png"
+            alt=""
+          />
+          <img
+            style="height: 100px"
+            src="https://contents-image.twayair.com/homepage/images/common/ISMS.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- 슬라이더 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- 슬라이더 끝 -->
+    <script src="dutyStore.js"></script>
+  </body>
+</html>

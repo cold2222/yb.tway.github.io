@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: rgb(73, 70, 70);
+  font-size: 14px;
+}
+li {
+  list-style: none;
+}
+.header {
+  height: 70px;
+  border-top: #d22c26 solid 4px;
+  border-bottom: solid 1px #e0e0e0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-1 {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  left: 5px;
+}
+.drop1 {
+  margin-right: 25px;
+  position: absolute;
+  right: 80px;
+  bottom: 5px;
+}
+.drop1::after {
+  content: "|";
+  float: right;
+  color: #ccc;
+}
+.drop2 {
+  position: absolute;
+  margin-right: 25px;
+  right: -30px;
+  bottom: 4px;
+}
+.drop-icon {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+}
+.header-1 a {
+  margin-right: 25px;
+}
+.menu-name {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-weight: 600;
+  height: 70px;
+  cursor: pointer;
+}
+.menu-name span {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.menu-name:hover span {
+  border-bottom: #d22c26 solid;
+  height: 2px;
+  transition: 0.1s;
+}
+/* header2 */
+.header2 {
+  width: 100%;
+  border-bottom: solid 1px #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-main-btm {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+}
+.search-main-btm input {
+  border-bottom: #4d4d4d 1px solid;
+  background-color: #4d4d4d;
+  height: 40px;
+}
+.search-main-btm-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btm-input-text {
+  background: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 13pt;
+}
+
+.search-main-btm-btm {
+  height: 70%;
+  width: 80pt;
+  background-color: #4d4d4d;
+  color: white;
+  font-size: 14pt;
+  border-radius: 5px;
+}
+.date-div {
+  justify-content: left;
+}
+
+.date-text1,
+.date-text2 {
+  display: flex;
+  width: 50%;
+  font-size: 10pt;
+}
+
+.btm-a {
+  position: relative;
+  right: 5pt;
+  width: 20pt;
+  height: 20pt;
+}
+.btm-a1 {
+  background-image: url(./t-way-img/ico_btn_pin.png);
+  background-repeat: no-repeat;
+}
+.btm-a2 {
+  background-image: url(./t-way-img/ico_btn_pin.png);
+  background-repeat: no-repeat;
+}
+.btm-a3 {
+  background-image: url(./t-way-img/ico_btn_date.png);
+  background-repeat: no-repeat;
+}
+.btm-a4 {
+  background-image: url(./t-way-img/ico_booking_passenger.png);
+  background-repeat: no-repeat;
+}
+/* 드롭다운 */
+/* .drop-menu {
+  overflow: hidden;
+  background-color: #333;
+  background-color: #d22c26;
+  width: 100%;
+  margin-right: 20px;
+}
+
+/* Links inside the navbar */
+.drop-menu a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: flex;
+  justify-content: space-around;
+  height: 0%;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  border: #e0e0e0 solid 1px;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  transition: all 3s;
+}
+
+/* 내가만든드롭메뉴 */
+.drop-menus {
+  position: relative;
+}
+.drop-menu {
+  display: flex;
+  height: 0%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  top: -48px;
+  left: 0;
+  padding-top: 40px;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -5;
+}
+.drop-menu div {
+  margin-top: 30px;
+  width: 18%;
+  font-size: 17px;
+  color: #1a1a1a;
+  font-weight: 800;
+  border-right: #e0e0e0 1px solid;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.drop-menu div li {
+  font-size: 10pt;
+  color: #4d4d4d;
+  margin-top: 5px;
+}
+.opne-menu {
+  display: flex;
+  overflow: hidden;
+  height: 600px;
+  transition: 0.7s ease;
+  z-index: 20;
+}
+.drop-sd {
+  box-shadow: 5px 5px 5px grey;
+  background-color: white;
+}

@@ -1,0 +1,175 @@
+.pd-wrap {
+    height: 100%;
+}
+
+.slide-over {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+}
+
+.slide-over-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+}
+
+.contents-container .pd-wrap .slide-over-slide {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    height: 100%;
+    box-sizing: content-box;
+    flex-shrink: unset;
+    border-right: 1px sloid rgba(0, 0, 0, 0, 12);
+}
+
+.slide-over-slide {
+    width: 100%;
+    padding: 160px 2% 100px;
+}
+
+.contents-container .pd-wrap .slide-over-slide .visual-img {
+    animation: fade-out 1s;
+    animation-fill-mode: forwards;
+}
+
+.contents-container .pd-wrap .slide-over-slide .visual-img.on {
+    animation: 1s ease 0s 1 normal forwards running fade-in;
+}
+
+.visual-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.product-list {
+    position: absolute;
+    color: black;
+    z-index: 50;
+    top: 160px;
+    left: 45%;
+    width: 230px;
+    transform: translateX(-50%);
+}
+
+.product-title {
+    font-size: 24px;
+}
+
+.product-title.on {
+    animation: 1.5s ease 0s 1 normal forwards running spFadeUp;
+}
+
+.product-title.off {
+    animation: 0.5s ease 0s 1 normal forwards running spFadeOff;
+}
+
+.product-title > strong {
+    font-size: 60px;
+}
+
+.product-price {
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    width: 250px;
+    transform: translateX(-50%);
+    color: black;
+    text-align: center;
+}
+
+.product-price .price {
+    font-size: 32px;
+}
+
+.product-price .mo {
+    font-size: 14px;
+}
+
+.product-price .btn-wrap {
+    display: none;
+    margin-top: 30px;
+}
+
+.product-price .btn-wrap > div {
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    background: rgba(11, 11, 11, 0.4);
+    height: 54px;
+    width: 50%;
+    flex: auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 54px;
+    font-weight: 500;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.product-price .btn-wrap > div:first-child {
+    float: left;
+}
+
+.product-price .btn-wrap > div:first-child {
+    float: right;
+}
+
+.sp-need-fade {
+    display: hidden;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes spFadeUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes spFadeOff {
+    0% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+    }
+}

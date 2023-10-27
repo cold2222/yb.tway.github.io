@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="MAX_event.css" />
+  <title>Document</title>
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+  <div style="position: sticky; top: 0; background-color: white; z-index: 99;">
+    <div class="header">
+      <div class="header-1">
+        <img class="logo" onclick="location.href='index.html'" style="cursor: pointer"
+          src="https://contents-image.twayair.com/homepage/images/common/top_logo_booking.png" alt="" />
+        <div class="menu-name-1 menu-name">항공권 예매<span></span></div>
+        <div class="menu-name-2 menu-name">나의 예약<span></span></div>
+        <div class="menu-name-3 menu-name">서비스 안내<span></span></div>
+        <div class="menu-name-4 menu-name">온라인면세점<span></span></div>
+        <div class="menu-name-5 menu-name">이벤트<span></span></div>
+        <div class="menu-name-6 menu-name">멤버십<span></span></div>
+        <div class="drop1">
+          <a href="#none">한국&nbsp;<img src="https://contents-image.twayair.com/homepage/images/common/arr_txt_sel.png"
+              alt="" /></a>
+        </div>
+        <div class="drop2">
+          <a href="#none">한국어&nbsp;<img src="https://contents-image.twayair.com/homepage/images/common/arr_txt_sel.png"
+              alt="" /></a>
+        </div>
+        <div class="drop-icon">
+          <a href="#none"><img src="https://contents-image.twayair.com/homepage/images/ico/ico_top_login.png"
+              alt="" /></a>
+          <a href="#none"><img src="https://contents-image.twayair.com/homepage/images/ico/ico_top_search.png"
+              alt="" /></a>
+          <a href="#none"><img src="https://contents-image.twayair.com/homepage/images/ico/ico_top_allmenu.png"
+              alt="" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="header2">
+      <div class="search-main-btm">
+        <div class="search-main-btm-div">
+          <input class="btm-input-text" type="text" readonly placeholder="  출발지" />
+          <a href="#none" class="btm-a1 btm-a"></a>
+        </div>
+        <div class="search-main-btm-div">
+          <input class="btm-input-text" type="text" readonly placeholder="  도착지" />
+          <a href="#none" class="btm-a2 btm-a"></a>
+        </div>
+        <div class="search-main-btm-div date-div">
+          <input class="btm-input-text date-text1" placeholder="  YYYY-MM-DD" type="text" /><span
+            style="align-items: center">~</span><input class="btm-input-text date-text2" placeholder="YYYY-MM-DD"
+            type="text" />
+          <a href="#none" class="btm-a3 btm-a"></a>
+        </div>
+        <div class="search-main-btm-div">
+          <input class="btm-input-text" type="text" readonly placeholder="  성인 0,소아 0,유아 0" />
+          <a href="#none" class="btm-a4 btm-a"></a>
+        </div>
+        <button class="search-main-btm-btm" style="cursor: pointer">
+          조회
+        </button>
+      </div>
+    </div>
+    <!--드롭다운  -->
+    <div class="drop-menus">
+      <div class="drop-menu-1 drop-menu">
+        <div>항공권 예매</div>
+        <div>이벤트/프로모션</div>
+        <div>운임 및 수수료 안내</div>
+        <div>
+          <img src="https://contents-image.twayair.com/homepage/images/pokemon/img_pikachu_balloon04.svg" alt="" />
+        </div>
+      </div>
+      <div class="drop-menu-2 drop-menu">
+        <div>예약 조회</div>
+        <div>온라인 체크인</div>
+        <div>부가서비스 추가구매</div>
+        <div>
+          <img src="https://contents-image.twayair.com/homepage/images/pokemon/img_pikachu_balloon04.svg" alt="" />
+        </div>
+      </div>
+      <div class="drop-menu-3 drop-menu">
+        <div>
+          여행준비
+          <li>항공권 예매 안내</li>
+          <li>단체 항공권 예매 안내</li>
+          <li>가족 동반 여행</li>
+          <li>도움이 필요한 고객</li>
+          <li>t'pet(반려동물 동반 여행)</li>
+          <li>혼자 여행하는 어린이</li>
+          <li>티웨이페이</li>
+          <li>티웨이 상품권</li>
+        </div>
+        <div>
+          항공편 및 공항정보
+          <li>운항스케줄 조회</li>
+          <li>출/도착 조회</li>
+          <li>도심공항 안내</li>
+          <li>셀프 체크인 안내</li>
+          <li>온라인 체크인 안내</li>
+          <li>탑승 수속 안내</li>
+          <li>공항 카운터 정보</li>
+          <li>코로나 19 종합 안내</li>
+          <li>셀프백드랍 안내</li>
+        </div>
+        <div>
+          부가서비스
+          <li>부가서비스 번들 구매</li>
+          <li>사전좌석 구매</li>
+          <li>수하물 추가 구매</li>
+          <li>기내식 사전 주문</li>
+          <li>결제시한연장 서비스</li>
+          <li>옆좌석 구매</li>
+          <li>t'pet 운송용기</li>
+          <li>원클릭 여행자보험</li>
+        </div>
+        <div>
+          <img src="https://contents-image.twayair.com/homepage/images/pokemon/img_pikachu_balloon04.svg" alt="" />
+        </div>
+        <div>
+          수하물 안내
+          <li>무료 수하물/포장용 비닐 구매</li>
+          <li>초과 수하물</li>
+          <li>특수 수하물</li>
+          <li>운송 제한 물품</li>
+          <li>수하물 배상</li>
+        </div>
+        <div>
+          기내 서비스
+          <li>기내 제공 서비스</li>
+          <li>t'shop</li>
+          <li>기내 면세품 예약 및 구매 안내</li>
+          <li>기내 이벤트</li>
+        </div>
+        <div>
+          제휴
+          <li>호텔</li>
+          <li>렌터카</li>
+          <li>금융 및 여행자보험</li>
+          <li>쇼핑 및 편의</li>
+          <li>액티비티</li>
+          <li>OTT & WIFI</li>
+          <li>원클릭 여행자보험</li>
+        </div>
+      </div>
+      <div class="drop-menu-4 drop-menu">
+        <div>
+          카테고리
+          <li>주류</li>
+          <li>화장품 & 향수</li>
+          <li>쥬얼리 & 선물용품</li>
+          <li>건강제품류</li>
+          <li>초콜릿 & 식품</li>
+        </div>
+        <div>
+          나의 주문
+          <li>주문 조회</li>
+        </div>
+        <div>이벤트</div>
+        <div>
+          <img src="https://contents-image.twayair.com/homepage/images/pokemon/img_pikachu_balloon04.svg" alt="" />
+        </div>
+        <div>공지사항</div>
+        <div>
+          이용안내
+          <li>FAQ</li>
+        </div>
+      </div>
+      <div class="drop-menu-5 drop-menu">
+        <div>이벤트/프로모션</div>
+        <div>
+          쿠폰
+          <li>쿠폰 안내</li>
+          <li>쿠폰북</li>
+        </div>
+        <div>
+          하늘 나는 피카츄 프로젝트
+          <li>프로젝트 소개</li>
+          <li>운항스케줄</li>
+          <li>온라인몰 바로가기</li>
+        </div>
+        <div>
+          <img src="https://contents-image.twayair.com/homepage/images/pokemon/img_pikachu_balloon04.svg" alt="" />
+        </div>
+      </div>
+      <div class="drop-menu-6 drop-menu">
+        <div>티웨이플러스 소개</div>
+        <div>혜택 이용 방법</div>
+        <div>티웨이플러스 구독하기</div>
+        <div>
+          <img src="https://contents-image.twayair.com/homepage/images/pokemon/img_pikachu_balloon04.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+  </header>
+  <main>
+    
+    
+    <div class="Current-path">
+      <div class="Current-path-inner">
+        <div class="Current-path-inner-font">
+          <a href="https://www.twayair.com/app/main">
+            <img src="https://contents-image.twayair.com/homepage/images/ico/ico_path_home.png" alt="">
+            HOME
+              </a>
+              &nbsp; &gt; &nbsp;
+              <a href="https://www.twayair.com/app/serviceInfo/contents/1119">
+                이벤트
+                <img src="https://contents-image.twayair.com/homepage/images/ico/ico_path_off.png" alt="">
+              </a>
+              &nbsp; &gt; &nbsp;
+              <a href="https://www.twayair.com/app/serviceInfo/contents/1119">
+                이벤트/프로모션
+                <img src="https://contents-image.twayair.com/homepage/images/ico/ico_path_off.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="ticket-information">
+          <div class="blank"></div>
+          <div class="ticket-information-div">
+            이벤트
+          </div>
+        </div>
+        <div class="Payment-Refund">
+          <div style="color: #d22c26;" class="Payment-Refund-inner-on">진행중인 이벤트</div>
+          <div class="Payment-Refund-inner-off">종료된 이벤트</div>
+        </div>
+    <div class="content">
+      <div class="box-LR">
+        <div class="box-UD"> <img id="contents-image"
+          src="https://contents-image.twayair.com/contents/2023/1018/70052bea-b896-4d96-9b7e-867c3202ddf7.png" alt="">
+          <div class="info-title">10~11출발 임박 항공권 특가</div>
+          <div class="info">특가 항공권 + 20% 추가할인 <br> 2023-10-23~2023-10-29</div>
+        </div>
+        <div class="box-UD"> <img id="contents-image"
+          src="https://contents-image.twayair.com/contents/2023/1010/c9f03ef8-3ddf-4360-aa1a-80546d4565e8.png" alt="">
+          <div class="info-title">[일본 소도시 시리즈] 사가</div>
+          <div class="info">편도총액 8만원대로 떠나는 일본 여행
+            <br>
+            2023-10-16 ~ 2023-10-29
+          </div>
+        </div>
+        <div class="box-UD"> <img id="contents-image"
+          src="https://contents-image.twayair.com/contents/2023/1005/f7c4279c-6072-4c1e-808a-a3c11355b208.png" alt="">
+          <div class="info-title">인천-사이판 특가</div>
+          <div class="info">편도총액 14만원대 / 20% 추가 할인
+            <br>
+            2023-10-06 ~ 2023-11-05
+          </div>
+        </div>
+      </div>
+      <div class="box-LR">
+        <div class="box-UD"> <img id="contents-image"
+          src="https://contents-image.twayair.com/contents/2022/1222/70040278-2e90-4458-86da-2c590f6a7a12.jpg" alt="">
+          <div class="info-title">티웨이 타면 왓챠 이용권 증정!</div>
+          <div class="info">2023년에도 쭉 진행되는 왓챠 혜택
+            <br>
+            2023-10-01 ~ 2024-01-01
+          </div>
+        </div>
+        <div class="box-UD"> <img id="contents-image"
+          src="https://contents-image.twayair.com/contents/2023/0920/430676bd-3ff4-4cdd-b1bf-f5d6344ad756.png" alt="">
+          <div class="info-title">하나카드 결제 할인</div>
+          <div class="info">항공권 결제하고 최대 7만원 캐시백!
+            <br>
+            2023-10-01 ~ 2023-10-31
+          </div>
+        </div>
+        <div class="box-UD"> <img id="contents-image"
+          src="https://contents-image.twayair.com/contents/2023/0926/79f338b5-3bbc-4455-9f60-3e573b91b1b9.png" alt="">
+          <div class="info-title">요기요 특별 제휴 이벤트</div>
+          <div class="info">최대 3천원 할인 쿠폰 제공
+            <br>
+            2023-10-01 ~ 2023-10-31
+          </div>
+        </div>
+      </div>
+      <div class="box-LR">
+        <div class="box-UD"> <img id="contents-image"
+          src="https://contents-image.twayair.com/contents/2023/0907/ff1efd48-c9f3-407f-9aae-21980eaf6fa5.png" alt="">
+          <div class="info-title">쏘카 1일 이용료 9,900원</div>
+          <div class="info">주말/성수기 전 차종 균일가 제공
+            <br>
+            2023-09-12 ~ 2023-12-18
+          </div>
+        </div>
+        <div class="box-UD"> <img id="contents-image"
+          src="https://contents-image.twayair.com/contents/2023/0710/1d0b78f6-922b-478c-95e9-77a5d7bdfaa3.png" alt="">
+          <div class="info-title">티웨이 타면 이월드 할인!</div>
+          <div class="info">자유이용권 최대 40% 할인!
+            <br>
+            2023-07-10 ~ 2024-01-01
+          </div>
+        </div>
+        <div class="box-UD"> <img id="contents-image"
+          src="https://contents-image.twayair.com/contents/2022/0801/67241333-fd67-4e39-ba03-23ff5a86b155.jpg" alt="">
+          <div class="info-title">신세계면세점 국제선 면세 혜택</div>
+          <div class="info">티웨이항공 고객 전용 혜택
+            <br>
+            2023-01-01 ~ 2023-12-31
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="page-select">
+      <div style="margin-right: 10px;" class="page-select-img"><img style="height: 40px;"
+        src="https://ifh.cc/g/Rw2OTY.png" alt="">
+      </div>
+      <div style="margin-right: 25px;" class="page-select-img"><img style="height: 40px;"
+        src="https://ifh.cc/g/k641q0.png" alt="">
+      </div>
+      <div class="page-selected-page">1
+      </div>
+      <div class="page-unselected-page">2
+      </div>
+      <div style="margin-left: 25px;" class="page-select-img"><img style="height: 40px;"
+        src="https://ifh.cc/g/DlSYwP.png" alt="">
+      </div>
+      <div style="margin-left: 10px;" class="page-select-img"><img style="height: 40px;"
+        src="https://ifh.cc/g/7Tw9sL.png" alt="">
+      </div>
+    </div>
+  </main>
+  <footer>
+  </div>
+  <div class="reservation-center">
+    <div style="display: flex;">
+      <div class="reservation-center-inner">티웨이항공 예약센터</div>
+      <div style="margin: 10px 20px; font-size: 18pt; color: #d22c26; font-weight: bold;">1688 - 8686</div>
+      <div style="font-size: 10pt; margin: 20px 0px;">07:00 ~ 19:00</div>
+    </div>
+    <div style="justify-content: space-between; display: flex;">
+      <div> <a href="http://www.instagram.com/twayair"><img class="links" src="https://ifh.cc/g/thrb0H.png"
+        alt=""></a>
+      </div>
+      <div> <a href="http://www.youtube.com/channel/UCEOdVOvRh7iT-ngjX5TVIIg"><img img class="links"
+        src="https://ifh.cc/g/yPzBc8.png" alt=""></a>
+      </div>
+      <div> <a href="http://www.facebook.com/twayair"><img class="links" src="https://ifh.cc/g/KhMKkw.png" alt=""></a>
+        </div>
+        <div style=" height: 40px; border-bottom: black 2px solid;">
+          <select name="likeLanguage" id="" class="pl">
+            <option value=""> 항공훈련센터 </option>
+            <option value=""> 예림당 </option>
+            <option value=""> 예림교육 </option>
+            <option value=""> 스마트베어 </option>
+            <option value=""> 와이슈타인 </option>
+            <option value=""> 예림디지털 </option>
+            <option value=""> 티웨이홀딩스 </option>
+            <option value=""> 해여림빌리지 </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="footer-info-t">
+      <div class="footer-info">
+        <div class="footer-info-box">
+          <div class="footer-info-bold">
+            <a href="">회사소개</a>
+          </div>
+          <div style="display: flex; height: 100%;">
+            <div class="footer-info-bold-inner">
+              
+              티웨이항공 소개 <br>
+              투자정보<br>
+              채용안내<br>
+              지속가능경영<br>
+              항공훈련센터<br>
+            </div>
+            <div class="footer-info-bold-inner">
+              광고 홍보 영상 <br>
+              사회 공헌<br>
+              보도자료<br>
+              기업지배구조<br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="footer-info-box">
+          <div class="footer-info-bold">
+            <a href="">고객센터</a>
+          </div>
+          <div style="display: flex; height: 100%;">
+            <div class="footer-info-bold-inner">
+              공지사항 <br>
+              유실물센터<br>
+              고객의 말씀<br>
+            </div>
+            <div class="footer-info-bold-inner">
+              제휴문의<br>
+              FAQ<br>
+              서식자료실<br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="footer-info-box">
+          <div class="footer-info-bold">
+            <a href="">규정 및 약관</a>
+          </div>
+          <div style="display: flex; height: 100%;">
+            <div class="footer-info-bold-inner">
+              여객운송약관 <br>
+              운임 및 수수료<br>
+              기타 고지사항<br>
+            </div>
+            <div class="footer-info-bold-inner">
+              홈페이지 이용약관<br>
+              개인정보 처리방침<br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="footer-info-box">
+          <div class="footer-info-bold">
+            <a href="">기타</a>
+          </div>
+          <div style="display: flex; height: 100%;">
+            <div class="footer-info-bold-inner" style=" width: 100%; ">
+              기타
+              항공교통 이용자서비스 계획<br>
+              피해구제계획<br>
+              t'agency<br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <div style="margin: 20px;"> <img src="https://contents-image.twayair.com/homepage/images/common/f_logo.png"
+        alt=""></div>
+        <div class="footer-last-info">
+          <p> 대표이사. 정홍근 | 사업자등록번호. 101-81-94800 | 주소. 대구광역시 중구 동덕로 167, 10층(동인동2가, KT 대구타워 신관) <br></p>
+          <p> 통신판매업신고번호. 2017-서울강서-1292 개인정보 관리책임자. 경영본부장 김형이 <br></p>
+          Copyright ⓒ 2019 t'way Air. All Rights Reserved. <br>
+          ©Pokémon. ©Nintendo/Creatures Inc./GAME FREAK inc.포켓몬스터, 포켓몬, Pokémon은 Nintendo의 상표입니다.
+        </div>
+        <div style="margin: 40px; display: flex; align-items: center;">
+          <img style="height: 69px;" src="https://contents-image.twayair.com/homepage/images/common/WA.png" alt="">
+          <img style="height: 100px;" src="https://contents-image.twayair.com/homepage/images/common/ISMS.png" alt="">
+        </div>
+      </footer>
+      <script src="header_event.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>티웨이 멤버십 클론코딩</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+
+        <link rel="stylesheet" href="header_mem.css" />
+        <link rel="stylesheet" href="nav.css" />
+        <link rel="stylesheet" href="fp.css" />
+        <link rel="stylesheet" href="sp.css" />
+        <link rel="stylesheet" href="tp.css" />
+        <link rel="stylesheet" href="lp.css" />
+    </head>
+    <body>
+        <header id="header">
+            <h1>
+                <a href="memebership.html">
+                    <img src="twayplus_logo.png" alt="티웨이플러스" />
+                </a>
+            </h1>
+            <div class="header-inner">
+                <a class="btn-sub">구독하기</a>
+                <a class="btn-people"></a>
+                <button class="btn-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <nav id="dot-nav">
+            <div class="pos-dot"></div>
+            <div class="pos-dot"></div>
+            <div class="pos-dot"></div>
+            <div class="pos-dot"></div>
+        </nav>
+        <div class="wrap" id="main-body">
+            <div id="first" class="contents-container fp-table">
+                <div class="tb-cell">
+                    <div class="video-wrap">
+                        <div class="video-box">
+                            <video
+                                autoplay
+                                data-keepplaying
+                                muted
+                                playsinline
+                                id="auto-video"
+                            >
+                                <source type="video/mp4" src="fp-video.mp4" />
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn-stop" type="button" aria-pressed="false">
+                        <span></span>
+                        <img
+                            src="https://contents-image.twayair.com/membership/images/ico/btn_stop.svg"
+                        />
+                    </button>
+                </div>
+            </div>
+            <div id="second" class="contents-container fp-table">
+                <div class="tb-cell sp-need-fade">
+                    <div class="pd-wrap slide-over">
+                        <div
+                            class="slide-over-wrap"
+                            style="transform: translate3d(0, 0, 0)"
+                            id="slide-wrapper"
+                        >
+                            <div class="slide-over-slide" id="swsl1">
+                                <img src="swp1.png" class="visual-img" />
+                                <div class="product-list">
+                                    <div class="product-title sp-fade off">
+                                        <strong>LITE</strong>
+                                        <p>
+                                            첫째도 가성비,<br />둘째도 가성비!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">KRW 29,000</span
+                                    ><span class="mo"> / 6개월</span>
+                                    <div class="btn-wrap">
+                                        <div>상세보기</div>
+                                        <div>구독하기</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-over-slide" id="swsl2">
+                                <img src="swp2.png" class="visual-img" />
+                                <div class="product-list">
+                                    <div class="product-title sp-fade off">
+                                        <strong>BASIC</strong>
+                                        <p>합리적인 소비를<br />지향한다면?</p>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">KRW 79,000</span
+                                    ><span class="mo"> / 1년</span>
+                                    <div class="btn-wrap">
+                                        <div>상세보기</div>
+                                        <div>구독하기</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-over-slide" id="swsl3">
+                                <img src="swp3.png" class="visual-img" />
+                                <div class="product-list">
+                                    <div class="product-title sp-fade off">
+                                        <strong>PREMIUM</strong>
+                                        <p>더 완벽한 여행을<br />원해요!</p>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">KRW 159,000</span
+                                    ><span class="mo"> / 1년</span>
+                                    <div class="btn-wrap">
+                                        <div>상세보기</div>
+                                        <div>구독하기</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-over-slide" id="swsl4">
+                                <img src="swp4.png" class="visual-img" />
+                                <div class="product-list">
+                                    <div class="product-title sp-fade off">
+                                        <strong>PREMIUM<br />PLUS</strong>
+                                        <p>
+                                            장거리 여행을 즐기는<br />프로
+                                            여행러!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">KRW 299,000</span
+                                    ><span class="mo"> / 1년</span>
+                                    <div class="btn-wrap">
+                                        <div>상세보기</div>
+                                        <div>구독하기</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="third" class="contents-container">
+                <div class="tb-cell">
+                    <div class="benefit-wrap tp-fade off">
+                        <h3>티웨이플러스 혜택</h3>
+                        <div
+                            style="
+                                justify-content: center;
+                                margin-bottom: 10px;
+                                margin-left: 80px;
+                                margin-right: 80px;
+                            "
+                            class="tp-fade off"
+                        >
+                            <div class="benefit-btn-wrap" id="benefit-btn-wrap">
+                                <div class="benefit-btn active">
+                                    캐시백 최대 97%
+                                </div>
+                                <div class="benefit-btn">동반인과 2배로</div>
+                                <div class="benefit-btn">원하는 좌석이 0원</div>
+                                <div class="benefit-btn">할인 쿠폰</div>
+                                <div class="benefit-btn">
+                                    특가 운임은 내가 먼저
+                                </div>
+                                <div class="benefit-btn">일정 변경 무료</div>
+                                <div class="benefit-btn">
+                                    공항에서는 나도 VIP
+                                </div>
+                                <div class="benefit-btn">멈추지 않는 혜택</div>
+                            </div>
+                        </div>
+                        <div
+                            class="benefit-content-container swiper swiper-benefit tp-fade off"
+                        >
+                            <div
+                                class="benefit-content-wrap swiper-wrapper"
+                                style="transform: translate3d(0px, 0px, 0px)"
+                            >
+                                <div class="benefit-content swiper-slide">
+                                    <div class="benefit-info">
+                                        <div class="txt1">
+                                            프리미엄플러스 기준
+                                        </div>
+                                        <div class="txt2">
+                                            구독료 97% 캐시백
+                                        </div>
+                                        <div class="txt3">
+                                            티웨이 e-카드로 캐시백 받아 항공권
+                                            결제하세요 <br />
+                                            (티웨이 e-카드: 항공권 예매 전용
+                                            결제 수단)
+                                        </div>
+                                    </div>
+                                    <div class="img-box">
+                                        <video
+                                            muted="true"
+                                            autoplay
+                                            playsinline
+                                            loop
+                                            height="463"
+                                            preload="auto"
+                                        >
+                                            <source
+                                                src="bfv1.mp4"
+                                                type="video/mp4"
+                                            />
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="benefit-content swiper-slide">
+                                    <div class="benefit-info">
+                                        <div class="txt1">여행갈 때 마다</div>
+                                        <div class="txt2">
+                                            다른 동반인 지정 가능
+                                        </div>
+                                        <div class="txt3">
+                                            동반인 추가 시, 매번 다른 동반인과
+                                            함께<br />혜택 받을 수 있어요.
+                                        </div>
+                                    </div>
+                                    <div class="img-box">
+                                        <video
+                                            muted="true"
+                                            autoplay
+                                            playsinline
+                                            loop
+                                            height="463"
+                                            preload="auto"
+                                        >
+                                            <source
+                                                src="bfv2.mp4"
+                                                type="video/mp4"
+                                            />
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="benefit-content swiper-slide">
+                                    <div class="benefit-info">
+                                        <div class="txt1">사전 좌석 구매는</div>
+                                        <div class="txt2">언제나 무료</div>
+                                        <div class="txt3">
+                                            티웨이플러스 회원이라면 좌석은
+                                            무제한 무료에요.
+                                        </div>
+                                    </div>
+                                    <div class="img-box">
+                                        <video
+                                            muted="true"
+                                            autoplay
+                                            playsinline
+                                            loop
+                                            height="463"
+                                            preload="auto"
+                                        >
+                                            <source
+                                                src="bfv3.mp4"
+                                                type="video/mp4"
+                                            />
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="benefit-content swiper-slide">
+                                    <div class="benefit-info">
+                                        <div class="txt2">최대 88,000원의</div>
+                                        <div class="txt1">할인 쿠폰 제공</div>
+                                        <div class="txt3">
+                                            항공권, 부가서비스 할인된 금액으로
+                                            만나보세요.
+                                        </div>
+                                    </div>
+                                    <div class="img-box">
+                                        <video
+                                            muted="true"
+                                            autoplay
+                                            playsinline
+                                            loop
+                                            height="463"
+                                            preload="auto"
+                                        >
+                                            <source
+                                                src="bfv4.mp4"
+                                                type="video/mp4"
+                                            />
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="benefit-content swiper-slide">
+                                    <div class="benefit-info">
+                                        <div class="txt1">먼저 만나보는</div>
+                                        <div class="txt2">특가운임</div>
+                                        <div class="txt3">
+                                            메가 얼리버드 프로모션 하루 먼저
+                                            만나보세요.
+                                        </div>
+                                    </div>
+                                    <div class="img-box">
+                                        <video
+                                            muted="true"
+                                            autoplay
+                                            playsinline
+                                            loop
+                                            height="463"
+                                            preload="auto"
+                                        >
+                                            <source
+                                                src="bfv5.mp4"
+                                                type="video/mp4"
+                                            />
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="benefit-content swiper-slide">
+                                    <div class="benefit-info">
+                                        <div class="txt1">수수료 없이</div>
+                                        <div class="txt2">
+                                            일정 2회 변경 가능
+                                        </div>
+                                        <div class="txt3">
+                                            수수료 최대 15만원까지 아낄 수
+                                            있어요.
+                                        </div>
+                                    </div>
+                                    <div class="img-box">
+                                        <video
+                                            muted="true"
+                                            autoplay
+                                            playsinline
+                                            loop
+                                            height="463"
+                                            preload="auto"
+                                        >
+                                            <source
+                                                src="bfv6.mp4"
+                                                type="video/mp4"
+                                            />
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="benefit-content swiper-slide">
+                                    <div class="benefit-info">
+                                        <div class="txt2">
+                                            공항 대기 시간을 줄이는
+                                        </div>
+                                        <div class="txt1">티웨이플러스</div>
+                                        <div class="txt3">
+                                            우선 수속, 탑승 및 수하물도 빠르게
+                                            받아보세요
+                                        </div>
+                                    </div>
+                                    <div class="img-box">
+                                        <video
+                                            muted="true"
+                                            autoplay
+                                            playsinline
+                                            loop
+                                            height="463"
+                                            preload="auto"
+                                        >
+                                            <source
+                                                src="bfv7.mp4"
+                                                type="video/mp4"
+                                            />
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="benefit-content swiper-slide">
+                                    <div class="benefit-info">
+                                        <div class="txt1">티웨이플러스의</div>
+                                        <div class="txt2">멈추지 않는 혜택</div>
+                                        <div class="txt3">
+                                            비지니스 업그레이드 기회 제공<br />t'pet
+                                            운송요금 할인<br />Crew Class 무료
+                                            체험
+                                        </div>
+                                    </div>
+                                    <div class="img-box">
+                                        <video
+                                            muted="true"
+                                            autoplay
+                                            playsinline
+                                            loop
+                                            height="463"
+                                            preload="auto"
+                                        >
+                                            <source
+                                                src="bfv8.mp4"
+                                                type="video/mp4"
+                                            />
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="last" class="contents-container">
+                <div class="tb-cell">
+                    <div class="etc-wrap lp-need-fade">
+                        <div class="accompanying">
+                            <a class="lp-fade off">
+                                <img
+                                    src="together.png"
+                                    alt="친구와 함께 티웨이 타고 티웨이플러스 혜택도 누려보세요"
+                                />
+                            </a>
+                        </div>
+                        <div class="about-plus">
+                            <a class="lp-fade off">
+                                <img src="about_twayplus.png" alt="dddd" />
+                            </a>
+                        </div>
+                    </div>
+                    <footer id="footer">
+                        <div class="footer-logo">
+                            <img src="twayplus_logo.png" alt="" />
+                        </div>
+                        <div class="f-info">
+                            <div class="f-address">
+                                <div>
+                                    <p>대표이사 : 정홍근</p>
+                                    <p>사업자등록번호 : 101-81-94800</p>
+                                    <address>
+                                        주소 : 대구광역시 중구 동덕로 167,
+                                        10층(동인동2가, KT 대구타워 신관)
+                                    </address>
+                                    <p>통신판매업신고번호 2017-서울강서-1292</p>
+                                    <p>개인정보관리 책임자 경영본부장 김형이</p>
+                                    <p>
+                                        Copyright ⓒ 2023 t’way Air. All Rights
+                                        Reserved.
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="f-menu">
+                                <li>티웨이플러스 이용약관</li>
+                                <li class="text-privacy-policy">
+                                    개인정보 처리방침
+                                </li>
+                                <li>공지사항</li>
+                                <li>자주 묻는 질문</li>
+                            </ul>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper(".swiper-benefit", {
+                loop: false,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                on: {
+                    activeIndexChange: (swiper) => {
+                        const benefitButtonList =
+                            document.querySelector(
+                                "#benefit-btn-wrap"
+                            ).children;
+                        for (const button of benefitButtonList)
+                            button.classList.remove("active");
+                        benefitButtonList[swiper.activeIndex].classList.add(
+                            "active"
+                        );
+                    },
+                },
+            });
+
+            const buttonList =
+                document.querySelector("#benefit-btn-wrap").children;
+            for (let i = 0; i < buttonList.length; i++) {
+                buttonList[i].addEventListener("click", (e) => {
+                    for (const button of buttonList)
+                        button.classList.remove("active");
+                    buttonList[i].classList.add("active");
+                    swiper.slideTo(i, 200);
+                });
+            }
+        </script>
+
+        <script type="text/javascript" src="fp.js"></script>
+        <script type="text/javascript" src="sp.js"></script>
+    </body>
+</html>

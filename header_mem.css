@@ -1,0 +1,112 @@
+header {
+    position: fixed;
+    z-index: 10;
+    height: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header h1 {
+    position: absolute;
+    left: 80px;
+    top: 26px;
+    width: 112px;
+    height: auto;
+}
+
+#header h1 img {
+    width: 100%;
+}
+
+#header .header-inner {
+    position: absolute;
+    top: 21px;
+    right: 80px;
+    width: 257px;
+}
+
+#header .header-inner a {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+#header .header-inner a.btn-sub {
+    width: 119px;
+    height: 38px;
+    border-radius: 20px;
+    background-color: #d22c26;
+    color: #fff;
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: 600;
+    float: left;
+}
+
+#header .header-inner a.btn-people {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin-left: 151px;
+}
+
+#header .header-inner a.btn-people::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
+    background-image: url("sprites_jiho.png");
+    background-size: 490.5px;
+    background-position: -246.5px -202.5px;
+    content: "";
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#header .header-inner button {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#header .header-inner .btn-nav {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: 0;
+    top: 0;
+}
+
+#header .header-inner .btn-nav::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
+    background-image: url("sprites_jiho.png");
+    background-size: 490.5px;
+    background-position: -192px -314px;
+    content: "";
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#header .header-inner .btn-nav span {
+    display: none;
+}

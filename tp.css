@@ -1,0 +1,157 @@
+.benefit-wrap {
+    padding-top: 80px;
+}
+
+.tp-fade.on {
+    animation: 1.5s ease 0s 1 normal forwards running tpFadeUp;
+}
+
+.tp-fade.off {
+    animation: 0.5s ease 0s 1 normal forwards running tpFadeOff;
+}
+
+.benefit-wrap > h3,
+.benefit-wrap > div {
+    opacity: 1;
+}
+
+.benefit-wrap > h3 {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 700;
+    color: #0b0b0b;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.benefit-btn-wrap {
+    display: block;
+    max-width: 1510px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.benefit-btn {
+    padding: 13px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-right: 8px;
+    text-align: center;
+    float: left;
+    margin-bottom: 16px;
+    font-size: 0.945rem;
+    background-color: #f5f5f5;
+}
+
+.benefit-btn.active {
+    background-color: #ff3434;
+    color: white;
+}
+
+.benefit-content-container {
+    animation: fadeUp 1s;
+    opacity: 1;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.benefit-content-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+}
+
+.benefit-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.benefit-info {
+    float: left;
+    padding-left: 80px;
+    font-size: 0.945rem;
+}
+
+.benefit-info > .txt1 {
+    color: #0b0b0b;
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 600;
+}
+
+.benefit-info > .txt2 {
+    color: #ff3434;
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 600;
+}
+
+.benefit-info > .txt3 {
+    margin-top: 24px;
+    font-size: 26px;
+    color: #0b0b0b;
+}
+
+.benefit-content > .img-box {
+    float: right;
+    width: 50%;
+    height: 484px;
+    background-size: cover;
+    padding: 0;
+}
+
+.benefit-content > .img-box > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    left: 60px;
+    bottom: 30px;
+}
+
+.tp-need-fade {
+    display: hidden;
+}
+
+@keyframes tpFadeUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes tpFadeOff {
+    0% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+    }
+}
